@@ -1,0 +1,15 @@
+{
+  "maxAttempts": 3,
+  "rateLimitPerMin": 10,
+  "cacheTtlSeconds": 86400,
+  "contextMessages": 6,
+  "maxMessageChars": 4000,
+  "maxBodyBytes": 32768,
+  "requestTimeoutMs": 20000,
+  "agents": {
+    "default": { "maxTokens": 500 },
+    "researcher": { "maxTokens": 1200 },
+    "supervisor": { "maxTokens": 300 },
+    "memorist": { "maxTokens": 300 }
+  }
+}
