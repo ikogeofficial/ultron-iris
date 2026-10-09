@@ -1,0 +1,15 @@
+{
+  "name": "ultron-iris",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ULTRON multi-agent assistant for Iris: PWA + Cloudflare Worker proxy + Supabase memory",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "models:update": "node scripts/models-update.js",
+    "models:check": "node scripts/models-check.js",
+    "lint": "node scripts/check-syntax.js && node scripts/check-secrets.js",
+    "test": "node --test",
+    "verify": "npm run lint && npm test"
+  }
+}

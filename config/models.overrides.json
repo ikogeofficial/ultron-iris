@@ -1,0 +1,5 @@
+{
+  "note": "Optional manual picks. Leave empty to use the automatic choice. Every OpenRouter ID must end in :free.",
+  "openrouter": {},
+  "nvidia": { "model": null }
+}

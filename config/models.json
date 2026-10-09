@@ -1,0 +1,12 @@
+{
+  "status": "unset",
+  "generatedAt": null,
+  "note": "Not generated yet. Run: npm run models:update (needs internet), then commit this file.",
+  "openrouter": {
+    "default": [],
+    "researcher": [],
+    "supervisor": [],
+    "memorist": []
+  },
+  "nvidia": { "model": null }
+}
