@@ -1,6 +1,6 @@
 {
   "name": "ultron-iris",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "ULTRON multi-agent assistant for Iris: PWA + Cloudflare Worker proxy + Supabase memory",

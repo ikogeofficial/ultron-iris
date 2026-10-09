@@ -1,0 +1,15 @@
+name = "ultron-iris-proxy"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+[vars]
+# Comma-separated list of sites allowed to call this Worker from a browser.
+# Edit to match where the PWA is hosted (no trailing slash).
+ALLOWED_ORIGINS = "https://ikogeofficial.github.io,http://localhost:5173,http://localhost:8080"
+
+# Optional response cache (credit guard). Create the namespace, then uncomment:
+#   npx wrangler kv namespace create CACHE
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = "PASTE_NAMESPACE_ID_HERE"

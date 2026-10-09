@@ -3,7 +3,7 @@
 ULTRON is a multi-agent AI assistant for **Iris** (the business). It runs as a
 PWA that works on Android, iPhone and PC, and uses free models only.
 
-> Status: build in progress. Steps 0 and 1 are in place. Nothing past Step 1 is built.
+> Status: build in progress. Steps 0 to 2 are in place. Nothing past Step 2 is built.
 
 ## Architecture
 
@@ -47,6 +47,7 @@ One commit per step. A step is done only when it passes its checks.
 
 - Step 0: done (repo, README, .gitignore, LICENSE).
 - Step 1: done in code. Config, model list script (`models:update`, `models:check`), secret scan, unit tests. `config/models.json` is still `unset` until you run `npm run models:update` on a machine with internet.
+- Step 2: done in code, not deployed. Worker proxy with the Default agent, `/health`, `/chat`, key rotation, Nemotron fallback, rate limit, optional cache. Tested against faked providers only.
 
 ## Checks
 
@@ -55,6 +56,7 @@ A GitHub Actions workflow that runs the same command is kept in
 `docs/ci.yml.txt` and must be added by the repo owner as
 `.github/workflows/ci.yml` (the build connector is not allowed to write
 workflow files). Until then, CI does not run automatically.
+Setup and test instructions for the Worker are in `docs/RUNBOOK.md`.
 
 ## Secrets
 
